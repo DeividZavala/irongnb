@@ -45,8 +45,13 @@ app.use("/api/users", usersRouter);
 app.use("/api/properties", propertiesRouter);
 app.use("/api/reservations", reservationsRouter);
 // aqui va mi nueva ruta que cree
+<<<<<<< HEAD
 const petsRouter = require('./routes/pets')
 app.use("/api/pets",petsRouter)
+=======
+// este es otro cambio en el appjs
+
+>>>>>>> 2d7f7378d03c3f2a4f65fd06b4d1a11a08383142
 app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
