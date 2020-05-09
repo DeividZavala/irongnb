@@ -24,7 +24,6 @@ const userSchema = new Schema(
     },
     profile_picture: {
       type: String,
-      required: [true, "Debes agregar una imagen de perfil"],
     },
   },
   { timestamps: true }
