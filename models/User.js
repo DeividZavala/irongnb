@@ -5,7 +5,6 @@ const userSchema = new Schema(
   {
     name: {
       type: String,
-      required: [true, "Debes agregar un nombre"],
     },
     email: {
       type: String,
