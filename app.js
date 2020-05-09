@@ -44,6 +44,7 @@ app.use("/api/", indexRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/properties", propertiesRouter);
 app.use("/api/reservations", reservationsRouter);
+// aqui va mi nueva ruta que cree
 
 app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
