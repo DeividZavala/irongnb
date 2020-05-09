@@ -45,7 +45,8 @@ app.use("/api/users", usersRouter);
 app.use("/api/properties", propertiesRouter);
 app.use("/api/reservations", reservationsRouter);
 // aqui va mi nueva ruta que cree
-
+const petsRouter = require('./routes/pets')
+app.use("/api/pets",petsRouter)
 app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
