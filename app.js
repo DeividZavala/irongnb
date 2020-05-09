@@ -45,6 +45,8 @@ app.use("/api/users", usersRouter);
 app.use("/api/properties", propertiesRouter);
 app.use("/api/reservations", reservationsRouter);
 // aqui va mi nueva ruta que cree
+const petsRouter = require('./routes/pets')
+app.use("/api/pets",petsRouter)
 // este es otro cambio en el appjs
 
 app.use("*", (req, res) => {
